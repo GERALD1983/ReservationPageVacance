@@ -21,6 +21,30 @@ body {
 .decorationNone {
   text-decoration: none;
 }
+.bordureNone {
+  border: none;
+}
+.texteGras {
+  font-weight: bold;
+}
+.colorBleu {
+  color: #0065fc;
+}
+.colorBleuClair {
+  color: #deebff;
+}
+.colorGris {
+  color: #f2f2f2;
+}
+.backBleu {
+  background-color: #0065fc;
+}
+.backBleuClair {
+  background-color: #deebff;
+}
+.backGris {
+  background-color: #f2f2f2;
+}
 /* NAV */
 .sizeNav {
   height: 100px;
@@ -31,9 +55,6 @@ body {
 .sizeLien {
   width: 140px;
   height: 99px;
-}
-.colorLien13 {
-  color: blue;
 }
 .colorLien2 {
   color: black;
@@ -46,4 +67,32 @@ body {
 }
 .marglogo {
   margin-bottom: 7px;
+}
+/*HEADER*/
+.bordureSearch {
+  width: 400px;
+  border-radius: 10px;
+  border: 0.5px solid #f2f2f2;
+}
+.paddingSearch {
+  padding-left: 20px;
+}
+.recherche {
+  height: 50px;
+  width: 230px;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+.iconSize {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px 0 0 10px;
+}
+.buttonSearch {
+  height: 50px;
+  width: 120px;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
 }
