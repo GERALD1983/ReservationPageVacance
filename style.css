@@ -66,7 +66,10 @@ body {
   height: 100px;
 }
 .sizeLiens {
-  width: 45%;
+  width: 100%;
+}
+.sizeLien12 {
+  margin-left: 60%;
 }
 .sizeLien {
   width: 140px;
@@ -76,10 +79,14 @@ body {
   color: black;
 }
 .bordureNav {
-  border-top: 1px solid blue;
-}
-.bordureNav23 {
   border-top: 1px solid transparent;
+}
+.bordureNav:hover {
+  border-top: 1px solid #0065fc;
+  cursor: pointer;
+}
+.bordureNav:hover > a {
+  color: #0065fc;
 }
 .marglogo {
   margin-bottom: 7px;
@@ -111,6 +118,10 @@ body {
   color: white;
   cursor: pointer;
   border-radius: 0 10px 10px 0;
+}
+.buttonSearch:hover {
+  color: #0065fc;
+  background-color: #f2f2f2;
 }
 /* Filtres */
 .margFiltre {
@@ -195,6 +206,10 @@ body {
   padding: 1%;
   border-radius: 20px;
 }
+.cubeHebergements:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
 .cubeDetailsHebergements {
   width: 90%;
 }
@@ -261,6 +276,10 @@ body {
   padding: 1% 0 1% 1%;
   border-radius: 20px;
 }
+.cubePopulaires:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
 .cubeDetailsPopulaires {
   width: 60%;
   padding-left: 5%;
@@ -308,10 +327,18 @@ body {
   border-radius: 15px;
   box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
+.cubeActivites:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
 .cubeActivites2356 {
   width: 100%;
   border-radius: 15px;
   box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+.cubeActivites2356:hover {
+  cursor: pointer;
+  transform: scale(1.03);
 }
 /* fin reglage bloc */
 .hauteurTitre {
@@ -385,4 +412,57 @@ body {
 }
 .margeBlocFoot3 {
   margin-right: 15%;
+}
+.lienFoot {
+  color: black;
+}
+.divLienFoot {
+  height: 30px;
+}
+/* responsive */
+
+@media screen and (max-width: 1295px) {
+  .sizeLien12 {
+    margin-left: 35%;
+  }
+  .cubeDetailsHebergements {
+    min-height: 150px;
+  }
+  .sizeHebergements {
+    min-height: auto;
+    padding: 20px;
+  }
+  .sizePopulaires {
+    min-height: auto;
+    padding: 20px;
+  }
+  .tabletteSizeTitrePop {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 990px) {
+  .mobileFiltreWrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .filtreTexteIcons {
+    margin-bottom: 20px;
+  }
+  #hebergements {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .blocPopulaires {
+    flex: none;
+    width: 90%;
+    margin-left: 0;
+    padding: 5%;
+  }
+  .blocHebergements {
+    flex: none;
+    width: 90%;
+    margin-right: 0;
+    margin-top: 50px;
+    padding: 5%;
+  }
 }
